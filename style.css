@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(63, 63, 63);
+    
+}
+
+header
+{
+    text-align: center;
+    font-size: xx-large;
+}
+
+.cell {
+    width: 35x;
+    height: 35px;
+    background-color: "";
+    border: 2.5px outset rgba(0, 0, 0, 0.2);
+    border-collapse: collapse;
+}
+
+.collun {
+    width: 35px;
+    cursor: pointer;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: repeat(10,auto);
+    width: 350px;
+    margin: auto;
+    text-align: center;
+    line-height: 61px;
+    font-size: 80px; 
+    border: 1px solid rgb(8, 8, 8);
+    background-color: rgb(25, 25, 46)
+}
+
+button{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
