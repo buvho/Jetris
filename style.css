@@ -21,7 +21,12 @@ header
     width: 35px;
     cursor: pointer;
 }
-
+#hiperc{
+    display: grid;
+    width: 750px;
+    grid-template-columns: auto auto auto;
+    margin: auto
+}
 #container{
     display: grid;
     grid-template-columns: repeat(10,auto);
@@ -33,9 +38,33 @@ header
     border: 1px solid rgb(8, 8, 8);
     background-color: rgb(25, 25, 46)
 }
+#sideDisplay{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#holdDisplay{
+    justify-self: right;
+    margin-top: 15px;
+    height: 125px;
+    width: 125px;
+}
+
+.pieceDisplay{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(25, 25, 46);
+    border: 5px outset rgba(0, 0, 0, 0.2);
+}
 
 button{
-    display: block;
+    position: relative;
+    left: 326px;
+    width: 100px;
     margin: auto;
     margin-top: 20px;
+}
+img{
+   width: 100%; 
 }
