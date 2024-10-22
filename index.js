@@ -1,12 +1,14 @@
 const all = document.getElementById("container")
 const SideDisplay = document.getElementById("sideDisplay")
 const holdDisplay = document.getElementById("holdDisplay")
+const scoreDisplay = document.getElementById("Score")
 let bag = [];
 let holdedPiece = 0;
 let holded = false;
 let lastmove = 0;
 let lastdown = 0;
 let lastflip = 0;
+let score = 0;
 let time = 800;
 let piece;
 let tack;
@@ -242,6 +244,8 @@ function checkLayers() {
 }
 
 function deleteLayer(layer) {
+    score += 100
+    scoreDisplay.textContent = `Score:${score}`
     for (let k = layer; k > 2; k--) {
         for (let l = 0; l < 10; l++) {
             board[k][l] = board[k - 1][l]
